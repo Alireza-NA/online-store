@@ -1,9 +1,21 @@
+// Context
+import ProductsContextProvider from "./context/ProductsContextProvider"; 
+// Styles
+import './styles/App.scss';
+
+// Components
+import Navbar from "./components/Navbar";
+import Cards from "./components/Cards";
+
 
 function App() {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <>
+      <Navbar />
+      <ProductsContextProvider>
+        <Cards />
+      </ProductsContextProvider>
+    </>
   );
 }
 

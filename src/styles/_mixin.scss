@@ -1,0 +1,31 @@
+
+// Mobile first
+@mixin ContainerStyle {
+    width: calc(100% - 1.5rem);
+    margin: 3rem auto;
+}
+// T = Tablet
+@mixin TContainer {
+    width: calc(100% - 3rem);
+    margin: 3rem auto;
+}
+// L = PC - Laptop & larger devices 
+@mixin LContainer {
+    width: calc(100% - 6rem);
+    margin: 3rem auto;
+}
+
+// media query
+
+@mixin media ($size) {
+    @if( $size == T){
+        @media (min-width:481px) and (max-width:768px) {
+            @content;
+        }
+    }@else if($size == L){
+        @media (min-width : 768px){
+        @content;
+        }
+    }
+
+}
