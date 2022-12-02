@@ -1,0 +1,14 @@
+@mixin btn{
+    height: 3rem;
+    width: 8rem;
+    border-radius: .6rem;
+    border: 1px solid silver;
+    background:rgb(0, 107, 254);
+    transition: all .5s ease-in-out;
+    @include fontStyle( .9rem , 600 , $textColor);
+    cursor: pointer;
+        &:hover{
+            border: 3px solid rgb(7, 75, 170) ;
+            background: rgb(0, 174, 255);
+        }
+}

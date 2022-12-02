@@ -6,6 +6,8 @@
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-around;
+    min-height: calc(100vh - 6.5rem);
+    margin: auto 0;
 }
 
 @include media (T){

@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // Styles
 import styles from '../styles/Navbar.module.scss'
@@ -18,7 +18,7 @@ const Navbar = () => {
                     <span className={styles.hamburguer__item}></span>
                     <span className={styles.hamburguer__item}></span>
                 </div>
-                <img src={logo} alt='logo'/>
+                <Link to='/'><img className={styles.image} src={logo} alt='logo'/></Link>
                 <ul>
                     <li>Electronics</li>
                     <li>Jewelery</li>

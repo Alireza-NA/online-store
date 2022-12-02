@@ -1,0 +1,42 @@
+@import '_mixin';
+@import '_colors';
+@import '_font&typography';
+@import '_buttons';
+
+.home__container{
+    @include ContainerStyle;
+    min-height: calc(100vh - 6.5rem);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    .content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 1rem;
+        p{
+            margin-top: 1rem;
+            text-align: justify;
+        }
+        button{
+            @include btn;
+        }
+    }
+    .image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 80%;
+        }
+    }
+}
+@include media(L) {
+    .home__container{
+        @include LContainer;
+        flex-direction: row;
+    }
+}
