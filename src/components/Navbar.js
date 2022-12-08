@@ -20,10 +20,10 @@ const Navbar = () => {
                 </div>
                 <Link to='/'><img className={styles.image} src={logo} alt='logo'/></Link>
                 <ul>
-                    <li>Electronics</li>
-                    <li>Jewelery</li>
-                    <li>Men's Clothing</li>
-                    <li>Women's Clothing</li>
+                    <li><Link to='shop/Electronics' >Electronics</Link></li>
+                    <li><Link to='shop/Jewelery' >Jewelery</Link></li>
+                    <li><Link to='shop/MensClothing' >Men's Clothing</Link></li>
+                    <li><Link to='shop/WomensClothing' >Women's Clothing</Link></li>
                 </ul>
             </div>
             <div className={styles.right__nav}>

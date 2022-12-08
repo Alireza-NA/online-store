@@ -44,6 +44,9 @@
                 transition: all .3s ease-in-out;
                 cursor: pointer;
                 @include fontStyle(1em , 500 ,$textColor );
+                a{
+                    text-decoration: none;
+                }
                 &:hover{
                     color: $firstColor;
                 }

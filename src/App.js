@@ -11,6 +11,7 @@ import Home from './pages/Home';
 import Navbar from "./components/Navbar";
 import Cards from "./components/Cards";
 import Footer from "./components/Footer";
+import Details from "./components/Details";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/shop" element={<Cards />}/>
+          <Route path="/shop/:id" element={<Details />}/>
         </Routes>
       </ProductsContextProvider>
       <Footer />

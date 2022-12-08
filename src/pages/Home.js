@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.scss';
 
 // Images
 import shopping from '../assets/shopping.jpg'
+import { Link } from 'react-router-dom';
 const Home = () => {
     return (
         <div className={styles.home__container}>
@@ -12,7 +13,7 @@ const Home = () => {
                 <p>This year, our new summer collection will shelter you
                     from the harsh elements of a world that doesn't
                     care if you live or die.</p>
-                <button>Shop Now</button>
+                <Link to='/shop'><button>Shop Now</button></Link>
             </div>
             <div className={styles.image}>
                 <img src={shopping} alt='shoping-vector'/>

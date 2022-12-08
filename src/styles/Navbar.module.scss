@@ -82,6 +82,10 @@
                 list-style: none;
                 @include fontStyle(.8rem , 550 , $textColor);
                 li{
+                    a{
+                        text-decoration: none;
+                        color: $textColor;
+                    }
                     padding: .5rem;
                 }
             }
